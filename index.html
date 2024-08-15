@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html data-theme="light" >
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light" />
+	<link rel="stylesheet" href="css/pico.purple.css" />
+  
+  <title>아레뜨 예술가 등록 신청</title>
+</head>
+<body style="background-color:#A861FF;">
+  <!-- Header -->
+  
+  <header class="container"  >
+    <section style="display: flex; justify-content: center;"><img src="LOGO.jpg" style="width: 20%"></section>
+    <article >
+      <h1 style="color: #A861FF;">예술가 등록 신청</h1>
+      <footer>아레뜨가 예술의 씨앗을 찾습니다.</footer>
+    </article>
+    
+    
+  </header>
+  
+  <!-- ./ Header -->
+
+  <!-- Main -->
+  <main class="container">
+    
+   <article> <!-- Preview -->
+    
+    <section id="preview">
+      <h2>아레뜨와 함께하기</h2>
+      <p>
+        아레뜨에서는 직접 창조해냈다면 모든 분야의 작품을 판매할 수 있습니다. 진정성 있는 예술가 여러분과 함께 하기 위해 판매하고 싶은 작품과 그 이야기를 듣고 싶습니다. 협조해주셔서 감사합니다.
+      </p>
+      
+    </section>
+    <!-- ./ Preview -->
+
+    
+
+
+    <!-- Form elements-->
+    <section id="form">
+      <form action="Form_Upload.php" method="post">
+        
+      
+        <h2>개인정보 동의</h2>
+        우리 아레뜨에 예술가로 등록하기 위해서는 개인정보 이용 약관에 동의해야 합니다. 개인정보 이용 약관 거부시 예술가 등록 절차가 진행되지 않을 수 있습니다.
+        
+      <details open>
+        <summary>개인정보 이용 약관 세부사항</summary>
+        <ul>
+          <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
+          <li>Nam et magna at libero scelerisque egestas.</li>
+          <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
+          <li>Proin ultricies turpis et volutpat vehicula.</li>
+        </ul>
+      </details>
+        <fieldset>
+          <label for="terms">
+            <input type="checkbox" role="switch" id="terms" name="terms" required/>
+            
+            <a href="https://alette.co.kr/?pn=pages.view&type=agree&data=privacy" target="_blank">개인정보 이용 약관</a>에 동의합니다.
+          </label>
+        </fieldset>
+      
+        <h2>작가 소개</h2>
+
+        <!-- 성함 -->
+        <label for="name">성함</label>
+        <input type="text" id="name" name="name" placeholder="홍길동" required/>
+        <small>필수 항목입니다.</small>
+
+        <!-- 이메일 -->
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" placeholder="ex) alette0629@gmail.com" required/>
+        <small>필수 항목입니다.</small>
+
+        <!-- 전화번호 -->
+         <label for="phone">전화번호</label>
+         <input type="tel" id="phone" name="phone" placeholder="01012345678"  pattern="[0][1][0][0-9]+" maxlength="11" required >
+         <small>필수 항목입니다.</small>
+
+        <!-- 활동분야 -->
+        <label for="select">활동 분야</label>
+        <select id="select" name="select" required>
+          
+          <option value="" selected>--</optionselected>
+          <option>조각</option>
+          <option>회화</option>
+          <option>사진</option>
+          <option>만화</option>
+          <option>기타</option>
+        </select>
+        <small>필수 항목입니다.</small>
+
+        <!-- File browser -->
+        <label for="file"
+          >대표 작품 사진
+          <input type="file" id="file" name="file" required/>
+          <small>필수 항목입니다.</small>
+        </label>
+        
+
+        <label for="introduction">
+          대표 작품 설명
+          <textarea rows="4" required></textarea>
+          <small>필수 항목입니다.</small>
+          
+        </label>
+        
+
+        <!-- Buttons -->
+        
+        <input type="submit" value="제출하기" />
+      </form>
+    </section>
+    <!-- ./ Form elements-->
+</article>
+  </main>
+  <!-- ./ Main -->
+
+  <!-- Footer -->
+  <footer class="container">
+    <small
+      >Built with <a href="https://picocss.com">Pico</a> •
+      <a href="https://github.com/picocss/examples/blob/master/v2-html/index.html"
+        >Source code</a
+      ></small
+    >
+  </footer>
+  <!-- ./ Footer -->
+
+ 
+  <!-- ./ Modal example -->
+
+  <!-- Minimal theme switcher -->
+  <script src="js/minimal-theme-switcher.js"></script>
+
+  <!-- Modal -->
+  <script src="js/modal.js"></script>
+</body>
+</html>
