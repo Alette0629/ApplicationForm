@@ -4,8 +4,8 @@
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="color-scheme" content="light" />
-	<link rel="stylesheet" href="pico.purple.css" />
-	<link rel="stylesheet" href="noarrow.css" />
+	<link rel="stylesheet" href="css/pico.purple.css" />
+  <link rel="stylesheet" href="CSS/noarrow.css"/>
   
   <title>아레뜨 예술가 등록 신청</title>
 </head>
@@ -96,14 +96,14 @@
         </select>
         <small>필수 항목입니다.</small>
 
-        <!-- File browser -->
+        <!-- 대표 작품 사진 -->
         <label for="file"
           >대표 작품 사진
           <input type="file" id="file" name="file" required/>
           <small>필수 항목입니다.</small>
         </label>
         
-
+        <!-- 대표 작품 설명  -->
         <label for="introduction">
           대표 작품 설명
           <textarea rows="4" required></textarea>
@@ -111,8 +111,15 @@
           
         </label>
         
+        <!-- 대표 작품 희망 가격 -->
+         <label for="money">
+          대표 작품 희망 가격
+          <input type="number" pattern="[0-9]+" required>
+          <small>단위 : (원), 필수 항목입니다.</small>
+          
+         </label>
 
-        <!-- Buttons -->
+        
         
         <input type="submit" value="제출하기" />
       </form>
